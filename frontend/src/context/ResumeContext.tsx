@@ -129,6 +129,121 @@ interface ResumeContextType {
   isLoading: boolean;
 }
 
+const sanitizeHtml = (html: string): string => {
+  if (!html) return '';
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
+  
+  const cleanNode = (node: Node): Node | null => {
+    if (node.nodeType === Node.TEXT_NODE) {
+      return node.cloneNode(true);
+    }
+    
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      const el = node as HTMLElement;
+      const tagName = el.tagName.toLowerCase();
+      
+      const fragment = document.createDocumentFragment();
+      el.childNodes.forEach(child => {
+        const cleanedChild = cleanNode(child);
+        if (cleanedChild) {
+          fragment.appendChild(cleanedChild);
+        }
+      });
+      
+      const isBold = tagName === 'b' || tagName === 'strong' || 
+                     el.style.fontWeight === 'bold' || 
+                     el.style.fontWeight === 'bolder' || 
+                     (el.style.fontWeight && parseInt(el.style.fontWeight) >= 600);
+                     
+      const isItalic = tagName === 'i' || tagName === 'em' || 
+                       el.style.fontStyle === 'italic';
+                       
+      const isUnderline = tagName === 'u' || 
+                          el.style.textDecorationLine === 'underline' || 
+                          el.style.textDecoration.includes('underline');
+
+      const isBr = tagName === 'br';
+      
+      if (isBr) {
+        return document.createElement('br');
+      }
+      
+      let currentRoot: Node = fragment;
+      
+      if (isUnderline) {
+        const u = document.createElement('u');
+        u.appendChild(currentRoot);
+        currentRoot = u;
+      }
+      if (isItalic) {
+        const em = document.createElement('em');
+        em.appendChild(currentRoot);
+        currentRoot = em;
+      }
+      if (isBold) {
+        const strong = document.createElement('strong');
+        strong.appendChild(currentRoot);
+        currentRoot = strong;
+      }
+      
+      return currentRoot;
+    }
+    return null;
+  };
+  
+  const fragment = document.createDocumentFragment();
+  doc.body.childNodes.forEach(child => {
+    const cleaned = cleanNode(child);
+    if (cleaned) {
+      fragment.appendChild(cleaned);
+    }
+  });
+  
+  const div = document.createElement('div');
+  div.appendChild(fragment);
+  return div.innerHTML;
+};
+
+const sanitizeResumeState = (state: ResumeState): ResumeState => {
+  return {
+    personalInfo: {
+      name: sanitizeHtml(state.personalInfo.name),
+      title: sanitizeHtml(state.personalInfo.title),
+      phone: sanitizeHtml(state.personalInfo.phone),
+      email: sanitizeHtml(state.personalInfo.email),
+      linkedin: sanitizeHtml(state.personalInfo.linkedin),
+      github: sanitizeHtml(state.personalInfo.github),
+      tags: sanitizeHtml(state.personalInfo.tags),
+      summary: sanitizeHtml(state.personalInfo.summary),
+    },
+    experiences: state.experiences.map(exp => ({
+      ...exp,
+      company: sanitizeHtml(exp.company),
+      role: sanitizeHtml(exp.role),
+      date: sanitizeHtml(exp.date),
+      location: sanitizeHtml(exp.location),
+      highlights: exp.highlights.map(h => sanitizeHtml(h)),
+    })),
+    education: state.education.map(edu => ({
+      ...edu,
+      degree: sanitizeHtml(edu.degree),
+      school: sanitizeHtml(edu.school),
+      date: sanitizeHtml(edu.date),
+      location: sanitizeHtml(edu.location),
+    })),
+    skills: state.skills.map(skill => ({
+      ...skill,
+      category: sanitizeHtml(skill.category),
+      items: sanitizeHtml(skill.items),
+    })),
+    keyAchievements: state.keyAchievements.map(ach => ({
+      ...ach,
+      description: sanitizeHtml(ach.description),
+    })),
+  };
+};
+
 const ResumeContext = createContext<ResumeContextType | undefined>(undefined);
 
 export const ResumeProvider = ({ children }: { children: ReactNode }) => {
@@ -173,6 +288,9 @@ export const ResumeProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const saveResume = async () => {
+    const sanitizedData = sanitizeResumeState(data);
+    setData(sanitizedData);
+
     try {
       const res = await fetch('/api/resumes', {
         method: 'POST',
@@ -180,7 +298,7 @@ export const ResumeProvider = ({ children }: { children: ReactNode }) => {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(sanitizedData)
       });
       if (!res.ok) {
         throw new Error('Failed to save resume');

@@ -17,7 +17,7 @@
         "linkedin": "linkedin.com/in/vivekkalola/",
         "github": "github.com/vivekkalola",
         "tags": "Immediate joiner - DISTRIBUTED SYSTEMS - System design - AIOps - LLMOPS - AGENTIC WORKFLOWS - RAG",
-        "summary": "Innovative Senior AI Engineer with \u003cb\u003e9\u0026nbsp;years\u003c/b\u003e of experience bridging \u003cb\u003ehigh-performance distributed systems\u003c/b\u003e (\u003cb\u003eGo\u003c/b\u003e, \u003cb\u003eJava 21\u003c/b\u003e) with production-grade \u003cb\u003eAI orchestration\u003c/b\u003e (\u003cb\u003eLangGraph\u003c/b\u003e, \u003cb\u003eRAG\u003c/b\u003e, \u003cb\u003eAgentic Workflows\u003c/b\u003e). Proven track record of architecting local \u003cb\u003eLLM pipelines\u003c/b\u003e, \u003cb\u003esemantic search\u003c/b\u003e infrastructures, and enterprise \u003cb\u003eAIOps platforms\u003c/b\u003e handling \u003cb\u003emillions of events\u003c/b\u003e. Expert in optimising infrastructure footprints for open-source models, delivering \u003cb\u003euser-first\u003c/b\u003e system design, and executing \u003cb\u003emulti-cloud architectures\u003c/b\u003e under strict latency constraints."
+        "summary": "Innovative Senior AI Engineer with \u003cstrong\u003e9\u0026nbsp;years\u003c/strong\u003e of experience bridging \u003cstrong\u003ehigh-performance distributed systems\u003c/strong\u003e (\u003cstrong\u003eGo\u003c/strong\u003e, \u003cstrong\u003eJava 21\u003c/strong\u003e) with production-grade \u003cstrong\u003eAI orchestration\u003c/strong\u003e (\u003cstrong\u003eLangGraph\u003c/strong\u003e, \u003cstrong\u003eRAG\u003c/strong\u003e, \u003cstrong\u003eAgentic Workflows\u003c/strong\u003e). Proven track record of architecting local \u003cstrong\u003eLLM pipelines\u003c/strong\u003e, \u003cstrong\u003esemantic search\u003c/strong\u003e infrastructures, and enterprise \u003cstrong\u003eAIOps platforms\u003c/strong\u003e handling \u003cstrong\u003emillions of events\u003c/strong\u003e. Expert in optimising infrastructure footprints for open-source models, delivering \u003cstrong\u003euser-first\u003c/strong\u003e system design, and executing \u003cstrong\u003emulti-cloud architectures\u003c/strong\u003e under strict latency constraints."
       },
       "experiences": [
         {
@@ -27,11 +27,11 @@
           "date": "Feb 2025 - Jan 2026",
           "location": "Bengaluru",
           "highlights": [
-            "\u003cspan style=\"font-weight: bolder;\"\u003eSpearheaded\u003c/span\u003e the \u003cspan style=\"font-weight: bolder;\"\u003eGoogle Meet integration\u003c/span\u003e, leveraging Windsurf to accelerate the development lifecycle, resulting in a 9% increase in upload volume.",
-            "\u003cspan data-path-to-node=\"4,0,0,0\" style=\"font-family: \u0026quot;Google Sans Text\u0026quot;, sans-serif !important; line-height: 1.15 !important;\"\u003e\u003cspan data-path-to-node=\"4,0,0,0\" data-index-in-node=\"0\" style=\"font-weight: bolder; line-height: 1.15 !important;\"\u003eArchitected an asynchronous video insight and semantic search pipeline\u003c/span\u003e using Python, LangGraph, and ChromaDB to ingest and index transcribed Google Meet recordings\u003c/span\u003e\u003cspan data-path-to-node=\"4,0,0,1\" style=\"font-family: \u0026quot;Google Sans Text\u0026quot;, sans-serif !important; line-height: 1.15 !important;\"\u003e\u003cspan style=\"line-height: 1.15 !important;\"\u003e\u003cresponse-element class=\"\" ng-version=\"0.0.0-PLACEHOLDER\" style=\"line-height: 1.15 !important;\"\u003e\u003csource-footnote _nghost-ng-c1242759980=\"\" class=\"ng-star-inserted\" style=\"line-height: 1.15 !important;\"\u003e\u003cspan _ngcontent-ng-c1242759980=\"\" class=\"superscript\" style=\"position: relative; vertical-align: baseline; top: -0.5em; font-size: 16px !important; line-height: 1.15 !important; background-color: transparent !important;\"\u003e\u003c/span\u003e\u003c/source-footnote\u003e\u003c/response-element\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan data-path-to-node=\"4,0,0,2\" style=\"font-family: \u0026quot;Google Sans Text\u0026quot;, sans-serif !important; line-height: 1.15 !important;\"\u003e.\u003c/span\u003e",
-            "\u003cb data-path-to-node=\"4,2,0\" data-index-in-node=\"0\"\u003eOptimised infrastructure footprint\u003c/b\u003e by deploying local HuggingFace models for token embeddings, completely mitigating external API billing and rate-limiting constraints during high-volume data ingestion.",
-            "\u003cspan style=\"font-weight: bolder;\"\u003eRe-architected\u003c/span\u003e fundamental SSO logic to decouple authentication dependencies, eliminating critical token-sharing vulnerabilities and migrating to a secure, user-level architecture.",
-            "\u003cb\u003eAutomated deployment workflows\u003c/b\u003e by implementing CI/CD pipelines using GitHub Actions and ArgoCD, reducing deployment time by \u003cb\u003e70% \u003c/b\u003eand minimizing human error.\u0026nbsp;"
+            "\u003cstrong\u003eSpearheaded\u003c/strong\u003e the \u003cstrong\u003eGoogle Meet integration\u003c/strong\u003e, leveraging Windsurf to accelerate the development lifecycle, resulting in a 9% increase in upload volume.",
+            "\u003cstrong\u003eArchitected an asynchronous video insight and semantic search pipeline\u003c/strong\u003e using Python, LangGraph, and ChromaDB to ingest and index transcribed Google Meet recordings.",
+            "\u003cstrong\u003eOptimised infrastructure footprint\u003c/strong\u003e by deploying local HuggingFace models for token embeddings, completely mitigating external API billing and rate-limiting constraints during high-volume data ingestion.",
+            "\u003cstrong\u003eRe-architected\u003c/strong\u003e fundamental SSO logic to decouple authentication dependencies, eliminating critical token-sharing vulnerabilities and migrating to a secure, user-level architecture.",
+            "\u003cstrong\u003eAutomated deployment workflows\u003c/strong\u003e by implementing CI/CD pipelines using GitHub Actions and ArgoCD, reducing deployment time by \u003cstrong\u003e70% \u003c/strong\u003eand minimizing human error.\u0026nbsp;"
           ]
         },
         {
@@ -41,10 +41,10 @@
           "date": "Jun 2023 - Jan 2025",
           "location": "Pune",
           "highlights": [
-            "\u003cb\u003eArchitected\u003c/b\u003e a \u003cb\u003emulti-cloud networking solution\u003c/b\u003e to bridge private connectivity between AWS and Azure for a Tier-1 Telecom client, prioritizing high\navailability and regional scalability.",
-            "\u003cb\u003eConceptualized and executed the NMS \u0026amp; FinOps \u003c/b\u003esolution, scaling the system from a single-box concept to a cloud-native clustered solution that\nincreased capacity by \u003cb\u003e300%.\u003c/b\u003e",
-            "Defined the product roadmap and requirements while leading a cross-functional team of Engineers and QA to deliver a \u003cb\u003eService-Oriented Architecture.\u003c/b\u003e",
-            "Engineered and \u003cb\u003eopen-sourced Vert.x SDKs\u003c/b\u003e, standardizing development processes and improving overall system performance."
+            "\u003cstrong\u003eArchitected\u003c/strong\u003e a \u003cstrong\u003emulti-cloud networking solution\u003c/strong\u003e to bridge private connectivity between AWS and Azure for a Tier-1 Telecom client, prioritizing high\navailability and regional scalability.",
+            "\u003cstrong\u003eConceptualized and executed the NMS \u0026amp; FinOps \u003c/strong\u003esolution, scaling the system from a single-box concept to a cloud-native clustered solution that\nincreased capacity by \u003cstrong\u003e300%.\u003c/strong\u003e",
+            "Defined the product roadmap and requirements while leading a cross-functional team of Engineers and QA to deliver a \u003cstrong\u003eService-Oriented Architecture.\u003c/strong\u003e",
+            "Engineered and \u003cstrong\u003eopen-sourced Vert.x SDKs\u003c/strong\u003e, standardizing development processes and improving overall system performance."
           ]
         },
         {
@@ -54,9 +54,9 @@
           "date": "Mar 2020 - Jun 2023",
           "location": "Ahmedabad",
           "highlights": [
-            "Built a horizontally scalable \u003cb\u003eUnified Observability platform\u003c/b\u003e using Java 17, Vert.x, and ClickHouse, facilitating near-real-time processing over \u003cb\u003e1 million\ndaily events\u003c/b\u003e.",
-            "\u003cb\u003eDeveloped\u003c/b\u003e a high-performance log parser using regex and template-based extraction; implemented a custom Vert.x load balancer to prevent worker\nsaturation, making parsing \u003cb\u003e30% faster\u003c/b\u003e than traditional methods.",
-            "Engineered a custom Reporting Engine from scratch using a headless browser worker pool to render HD Vue.js widgets into PDFs, reducing browser\nspawn time and improving generation speed by \u003cb\u003e80%\u003c/b\u003e.",
+            "Built a horizontally scalable \u003cstrong\u003eUnified Observability platform\u003c/strong\u003e using Java 17, Vert.x, and ClickHouse, facilitating near-real-time processing over \u003cstrong\u003e1 million\ndaily events\u003c/strong\u003e.",
+            "\u003cstrong\u003eDeveloped\u003c/strong\u003e a high-performance log parser using regex and template-based extraction; implemented a custom Vert.x load balancer to prevent worker\nsaturation, making parsing \u003cstrong\u003e30% faster\u003c/strong\u003e than traditional methods.",
+            "Engineered a custom Reporting Engine from scratch using a headless browser worker pool to render HD Vue.js widgets into PDFs, reducing browser\nspawn time and improving generation speed by \u003cstrong\u003e80%\u003c/strong\u003e.",
             "Integrated full-stack APM and RUM solutions by leveraging Datadog RUM SDK for beacon redirection and Skywalking as a Java agent for deep\napplication tracing.",
             "Optimised network monitoring by deploying a passive APM solution capable of processing 1 Gbps traffic with near-zero packet drops."
           ]
@@ -87,11 +87,11 @@
         {
           "id": "1",
           "category": "Languages",
-          "items": "\u003cb\u003eGo, Java\u003c/b\u003e, TypeScript, JavaScript, C, C++, Python"
+          "items": "\u003cstrong\u003eGo, Java\u003c/strong\u003e, TypeScript, JavaScript, C, C++, Python"
         },
         {
           "id": "1784101965268",
-          "category": "AITools",
+          "category": "AI Tools",
           "items": "Antigravity, Windsurf, GitHub Copilot, Claude, Cursor, Hugging Face, LangGraph, RAG"
         },
         {
