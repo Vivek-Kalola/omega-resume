@@ -31,4 +31,4 @@ go.work.sum
 # OS files
 .DS_Store
 
-./db/db.json
+db/db.json
